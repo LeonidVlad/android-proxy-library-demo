@@ -3,7 +3,7 @@ package com.lechucksoftware.proxy.lib.activities;
 import java.net.MalformedURLException;
 import java.net.URI;
 
-import com.lechucksoftware.proxy.lib.ProxyUtils;
+import com.shouldit.proxy.lib.ProxyUtils;
 
 import android.app.Activity;
 import android.os.Build;

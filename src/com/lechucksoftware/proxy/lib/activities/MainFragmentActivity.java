@@ -20,9 +20,9 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.lechucksoftware.proxy.lib.ProxyConfiguration;
-import com.lechucksoftware.proxy.lib.ProxySettings;
-import com.lechucksoftware.proxy.lib.ProxyUtils;
+import com.shouldit.proxy.lib.ProxyConfiguration;
+import com.shouldit.proxy.lib.ProxySettings;
+import com.shouldit.proxy.lib.ProxyUtils;
 
 public class MainFragmentActivity extends FragmentActivity
 {
