@@ -4,8 +4,6 @@
 package com.lechucksoftware.proxy.lib.activities;
 
 import java.net.URI;
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -17,7 +15,6 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.shouldit.proxy.lib.ProxyConfiguration;
@@ -140,7 +137,7 @@ public class MainFragmentActivity extends FragmentActivity
         		ProxyConfiguration proxyConf;
 
 				proxyConf = ProxySettings.getCurrentProxyConfiguration(getApplicationContext(), uri);
-				result = ProxyUtils.getURI(uri,proxyConf.proxyHost);
+				result = ProxyUtils.getURI(uri,proxyConf.proxyHost,60000);
 			}
 			catch (Exception e)
 			{
