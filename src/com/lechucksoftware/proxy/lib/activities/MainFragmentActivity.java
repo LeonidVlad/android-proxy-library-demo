@@ -250,7 +250,7 @@ public class MainFragmentActivity extends FragmentActivity
 	public void ShowSettings(ProxyConfiguration proxyConf)
 	{
 		device_version.setText(String.valueOf(proxyConf.deviceVersion));
-		proxy_enabled.setText(String.valueOf(proxyConf.isProxyEnabled()));
+		proxy_enabled.setText(String.valueOf(proxyConf.status.getEnabled()));
 		apl_tostring.setText(proxyConf.toString());
 		
 		switch (proxyConf.getConnectionType())
