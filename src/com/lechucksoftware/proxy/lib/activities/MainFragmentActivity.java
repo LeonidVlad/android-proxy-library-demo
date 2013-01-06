@@ -253,7 +253,7 @@ public class MainFragmentActivity extends FragmentActivity
 		proxy_enabled.setText(String.valueOf(proxyConf.status.getEnabled()));
 		apl_tostring.setText(proxyConf.toString());
 		
-		switch (proxyConf.getConnectionType())
+		switch (proxyConf.getProxyType())
 		{
 			case DIRECT:
 				proxy_host.setText(getApplicationContext().getResources().getString(R.id.proxy_host_content));
