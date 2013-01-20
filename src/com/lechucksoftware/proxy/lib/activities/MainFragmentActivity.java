@@ -137,7 +137,7 @@ public class MainFragmentActivity extends FragmentActivity
         		ProxyConfiguration proxyConf;
 
 				proxyConf = ProxySettings.getCurrentProxyConfiguration(getApplicationContext(), uri);
-				result = ProxyUtils.getURI(uri,proxyConf.getProxyHost(),60000);
+				result = ProxyUtils.getURI(uri,proxyConf.getProxy(),60000);
 			}
 			catch (Exception e)
 			{
