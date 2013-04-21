@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.shouldit.proxy.lib.ProxyConfiguration;
 import com.shouldit.proxy.lib.ProxySettings;
 import com.shouldit.proxy.lib.ProxyUtils;
+import com.shouldit.proxy.lib.APLConstants.ProxyStatusProperties;
 
 public class MainFragmentActivity extends FragmentActivity
 {
@@ -250,7 +251,7 @@ public class MainFragmentActivity extends FragmentActivity
 	public void ShowSettings(ProxyConfiguration proxyConf)
 	{
 		device_version.setText(String.valueOf(proxyConf.deviceVersion));
-		proxy_enabled.setText(String.valueOf(proxyConf.status.getEnabled()));
+		proxy_enabled.setText(String.valueOf(proxyConf.status.getProperty(ProxyStatusProperties.PROXY_ENABLED).result));
 		apl_tostring.setText(proxyConf.toString());
 		
 		switch (proxyConf.getProxyType())
